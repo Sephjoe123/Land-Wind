@@ -1,0 +1,142 @@
+/* Navigation menu media queries */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
+
+
+/*code for Navigation menu*/
+nav .nav-ul li{
+  display: inline-block;
+  
+  }
+  /*code for Navigation menu*/
+  #menu-section{
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   height: 50px;
+   max-width: 1300px;
+   margin: auto;
+  }
+
+  .nav-ul{
+  list-style-type: none;
+  margin-top: 0px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+ 
+  }
+  #menu-section .last-item{
+    float: right;
+    color: blue;
+  
+  }
+  
+  li a{
+      color: var(--black-color);
+      text-decoration: none;
+      padding: 10px 5px;
+      font-size: 1rem;
+      align-items: center;
+      color: rgb(107,114,128);
+      font-weight: 600;
+  }
+
+  
+  a:hover{
+      transition: .5s;
+      color: #0f17a1;
+  }
+  #check,i{
+  float: left;
+  }
+  
+  #check{
+      display: none;
+  }
+  .checkbtn{
+      font-size: 1.9rem;
+      float: right;
+      cursor: pointer;
+      display: none;
+      line-height: 80px;
+  }
+  .nav-img{
+    margin-top: -2rem;
+  }
+/* navigation 
+ - show navigation always on the large screen devices with (min-width:1024)
+*/
+
+@media (min-width: 1024px) {
+  .top-navbar {
+    display: fixed;
+    background-color: green;
+  }
+}
+
+/* Media queries */
+
+/*Nav menu media query*/
+@media (max-width: 991px){
+  nav .nav-ul li a{
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+     display: block;
+  }
+  .nav-ul{
+ position: relative;
+ width: 80%;
+ height: 22.6rem;
+ left: -100%;
+ background-color: white;
+ transition: all  .5s;
+ text-align: left;
+ margin-left: 5rem;
+ line-height: 3rem;
+ 
+  }
+nav .nav-ul li{
+  display: flex;
+  margin: 3.2rem 0;
+  line-height: 10px;
+  flex-direction: column;
+  margin: -0.5rem;
+
+}
+nav .nav-ul li {
+  font-size: 1rem;
+  border-bottom: 1px solid rgb(226, 214, 214);
+}
+#check:checked ~ ul{
+  left: 0;
+}
+.checkbtn{
+  background-color: white;
+  width: 100%;
+  padding: 1%;
+}
+.fas {
+margin-top:0rem;
+font-size: 1.2rem;
+}
+#menu-section .last-item{
+  float: none;
+  color: blue;
+
+}
+}
+
+@media screen and (min-width: 250px) and (max-width: 450px){
+ .nav-ul {
+width: 90%;
+margin-left: 1rem;
+  }
+  nav .nav-ul li a{
+      font-size: 1.2rem;
+    }
+    
+    
+}
